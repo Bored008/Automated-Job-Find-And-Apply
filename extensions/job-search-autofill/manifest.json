@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "AI Job Search: 1-Click ATS Autofill",
+  "version": "1.0.0",
+  "description": "Zero-token, 1-click smart autofill for AshbyHQ, Greenhouse, Lever, Y Combinator, micro1, and Unstop.",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "*://*.ashbyhq.com/*",
+    "*://*.greenhouse.io/*",
+    "*://*.lever.co/*",
+    "*://*.workatastartup.com/*",
+    "*://*.micro1.ai/*",
+    "*://*.unstop.com/*",
+    "*://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AI Job Autofill"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.ashbyhq.com/*",
+        "*://*.greenhouse.io/*",
+        "*://*.lever.co/*",
+        "*://*.workatastartup.com/*",
+        "*://*.micro1.ai/*",
+        "*://*.unstop.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+[
+  {
+    "company": "Livekit",
+    "title": "Senior Product Designer, Developer Platform",
+    "location": "United States (Remote)",
+    "url": "https://jobs.ashbyhq.com/livekit/0684ae7c-4fd5-411e-a10c-3773e584cd97",
+    "source": "Ashby ATS",
+    "department": "R&D",
+    "fit_score": 90
+  },
+  {
+    "company": "Clerk",
+    "title": "Product Designer",
+    "location": "Remote",
+    "url": "https://jobs.ashbyhq.com/Clerk/7635ac5c-bb36-48aa-a572-e467eb9ab429",
+    "source": "Ashby ATS",
+    "department": "Design",
+    "fit_score": 90
+  },
+  {
+    "company": "Elevenlabs",
+    "title": "Full-Stack Engineer (Frontend Leaning) - Studio",
+    "location": "Remote",
+    "url": "https://jobs.ashbyhq.com/ElevenLabs/e6924f60-c8cc-42b3-9d05-2442ec30e12d",
+    "source": "Ashby ATS",
+    "department": "Engineering & Product",
+    "fit_score": 90
+  },
+  {
+    "company": "Deepgram",
+    "title": "Product Designer II",
+    "location": "USA - Remote",
+    "url": "https://jobs.ashbyhq.com/Deepgram/790f9a3f-82e8-4c55-995b-8ccb95d6eff9",
+    "source": "Ashby ATS",
+    "department": "Product",
+    "fit_score": 90
+  },
+  {
+    "company": "Gitlab",
+    "title": "Fullstack Engineer, Source Code: Repository Services (Ruby)",
+    "location": "Remote, United Kingdom",
+    "url": "https://job-boards.greenhouse.io/gitlab/jobs/8912709002",
+    "source": "Greenhouse ATS",
+    "department": "",
+    "fit_score": 88
+  },
+  {
+    "company": "Gitlab",
+    "title": "Fullstack Engineer (TypeScript), AI Engineering: Duo Client SDK",
+    "location": "Remote, Canada",
+    "url": "https://job-boards.greenhouse.io/gitlab/jobs/8698330002",
+    "source": "Greenhouse ATS",
+    "department": "",
+    "fit_score": 88
+  },
+  {
+    "company": "Gitlab",
+    "title": "Intermediate Fullstack Engineer, Subscription Lifecycle ",
+    "location": "Remote, Canada; Remote, United States",
+    "url": "https://job-boards.greenhouse.io/gitlab/jobs/8922249002",
+    "source": "Greenhouse ATS",
+    "department": "",
+    "fit_score": 88
+  },
+  {
+    "company": "Elevenlabs",
+    "title": "Full-Stack Engineer (Backend Leaning) - Platform Engineering",
+    "location": "Remote",
+    "url": "https://jobs.ashbyhq.com/ElevenLabs/ce3d5a59-fb8c-482b-bc3f-60e44576c5e0",
+    "source": "Ashby ATS",
+    "department": "Engineering & Product",
+    "fit_score": 80
+  },
+  {
+    "company": "Elevenlabs",
+    "title": "Full-Stack Engineer - Ads Engine",
+    "location": "Remote",
+    "url": "https://jobs.ashbyhq.com/ElevenLabs/3abf96ca-2937-4290-9d23-5208aece08b2",
+    "source": "Ashby ATS",
+    "department": "Engineering & Product",
+    "fit_score": 80
+  },
+  {
+    "company": "Elevenlabs",
+    "title": "Full-Stack Engineer - ElevenAPI",
+    "location": "Remote",
+    "url": "https://jobs.ashbyhq.com/ElevenLabs/108c99e6-ba2b-44a0-b830-7d535e14a152",
+    "source": "Ashby ATS",
+    "department": "Engineering & Product",
+    "fit_score": 80
+  },
+  {
+    "company": "Elevenlabs",
+    "title": "Full-Stack Engineer - Productions",
+    "location": "Remote",
+    "url": "https://jobs.ashbyhq.com/ElevenLabs/10e6475e-67ef-4621-8718-7b087c354651",
+    "source": "Ashby ATS",
+    "department": "Engineering & Product",
+    "fit_score": 80
+  }
+]

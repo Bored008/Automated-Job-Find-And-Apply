@@ -1,0 +1,165 @@
+%% Example CV - Himanshu
+%% Comprehensive overview of all competencies, experience, and achievements.
+%% Use as a master reference when tailoring role-specific CVs.
+%%
+%% Compile with: lualatex main_example.tex
+%% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+
+% Force the name and section headings to render in moderncv blue (color1).
+\renewcommand*{\namefont}{\fontsize{34}{36}\bfseries\upshape}
+\colorlet{firstnamecolor}{color1}
+\colorlet{lastnamecolor}{color1}
+\colorlet{namecolor}{color1}
+\renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
+
+\usepackage[utf8]{inputenc}
+\ifpdftex\usepackage[T1]{fontenc}\fi
+\AtEndPreamble{\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    pdftitle={Himanshu - CV},
+    pdfpagemode=UseNone,
+}}
+\usepackage[scale=0.80]{geometry}
+\usepackage{import}
+
+% personal data
+\name{Himanshu}{}
+\address{Murthal, Sonipat, Haryana, India}{}{}
+\phone[mobile]{+91 7015708154}
+\email{dahiyahimanshu80@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/himanshuakabored/}{LinkedIn}, \href{https://github.com/Bored008}{GitHub}}
+
+\begin{document}
+
+\makecvtitle
+
+% ============================================================
+%     PROFILE STATEMENT
+% ============================================================
+
+\vspace{6pt}
+\small{Full-Stack Developer and UI/UX Designer experienced in building modern web applications end-to-end --- from Figma designs to production deployment. Skilled in React, Next.js, TypeScript, Tailwind CSS, Node.js, Express.js, and MongoDB, with a focus on responsive interfaces, fluid animations (GSAP, Framer Motion), REST APIs, and scalable, database-driven products.}
+
+% ============================================================
+%     CORE COMPETENCIES
+% ============================================================
+
+\section{Core Competencies}
+\vspace{1pt}
+\begin{itemize}
+
+\item \textbf{Frontend Engineering}: React.js, Next.js, TypeScript, JavaScript, HTML5, CSS3, Tailwind CSS, GSAP, Framer Motion.
+
+\item \textbf{Backend \& Databases}: Node.js, Express.js, REST APIs, MongoDB, SQL, Java, C, C++.
+
+\item \textbf{UI/UX \& Product Design}: Figma, Framer, Adobe XD, Design Systems, Wireframing, Rapid Prototyping, User Flows, Information Architecture.
+
+\item \textbf{Developer Tooling \& AI}: Git, GitHub, Postman, Model Context Protocol (MCP), Claude Code, Gemini API, Stitch.
+
+\end{itemize}
+
+% ============================================================
+%     PROFESSIONAL EXPERIENCE
+% ============================================================
+
+\section{Professional Experience}
+\vspace{3pt}
+\begin{itemize}
+
+% --- Softech Media ---
+\item{\cventry{2026--Present}{Software Engineer Intern}{Softech Media}{Sonipat / Remote}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Contributing to the ongoing redesign of Orbit Shipping Services, a UAE-based freight and logistics company, developing key user-facing interfaces to support the client's site modernization initiative.}
+    \item {Collaborating with design and client teams to translate business requirements into responsive, user-centric web interfaces, improving platform usability and brand consistency.}
+\end{itemize}}}
+
+\vspace{3pt}
+
+% --- Yanegi ---
+\item{\cventry{2026}{Full Stack Developer \& UI/UX Designer Intern}{Yanegi}{Delhi NCR / Remote}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Redesigned and developed Yanegi's website into a fully responsive, production-ready web application for real-time local hangouts across cities including Delhi, New York, and Tokyo.}
+    \item {Built and refined interactive frontend interfaces using Next.js, TypeScript, Tailwind CSS, Framer Motion, and GSAP, translating Figma UI/UX designs into animated, production-ready components.}
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     PROJECTS
+% ============================================================
+
+\section{Featured Projects}
+\vspace{1pt}
+\begin{itemize}
+
+\item{\cventry{2026}{EBAT --- Safety Drone Platform}{Next.js, TypeScript, Tailwind CSS, GSAP, Figma MCP}{Sonipat, India}{}{\vspace{1pt}
+Designed the end-to-end UX/UI and developed the production frontend for a B2B drone security platform, translating brand direction into a bold visual identity, custom design system, and animated responsive web experience.
+}}
+
+\vspace{3pt}
+
+\item{\cventry{2026}{DocDesign --- AI-Assisted Documentation Tool}{React, Node.js, Express.js, MongoDB, Gemini API}{Sonipat, India}{}{\vspace{1pt}
+Built a generative AI documentation tool converting structured prompts into developer-ready layouts, reusable content blocks, and organized project documentation.
+}}
+
+\end{itemize}
+
+% ============================================================
+%     EDUCATION
+% ============================================================
+
+\section{Education}
+\vspace{1pt}
+\begin{itemize}
+
+\item{\cventry{2024--2028}{B.Tech in Electronics and Communication}{Deenbandhu Chhotu Ram University of Science and Technology (DCRUST)}{Murthal, Sonipat}{}{\vspace{1pt}
+CGPA: 7.0. In progress, expected June 2028. Key topics: Embedded Systems, Digital Electronics, Computer Networks.
+}}
+
+\vspace{3pt}
+
+\item{\cventry{2023}{Senior Secondary (12th)}{Indian Modern Senior Secondary School}{Gohana, Sonipat}{}{\vspace{1pt}
+Grade: 86\%. Completed April 2023.
+}}
+
+\end{itemize}
+
+% ============================================================
+%     LANGUAGES
+% ============================================================
+
+\section{Languages}
+\vspace{1pt}
+\begin{itemize}
+\item {English (Professional/Fluent), Hindi (Native).}
+\end{itemize}
+
+% ============================================================
+%     HONORS AND AWARDS
+% ============================================================
+
+\section{Honors and Awards}
+\vspace{1pt}
+\begin{itemize}
+\item{\textbf{Special Mention} -- UX Imperium Hackathon, NSUT (2026).}
+\item{\textbf{Core Team Member} -- Open Developers Community (ODC), DCRUST (2024--Present).}
+\end{itemize}
+
+% ============================================================
+%     REFERENCES
+% ============================================================
+
+\section{References}
+\vspace{1pt}
+\begin{itemize}
+\item{Available upon request.}
+\end{itemize}
+
+\end{document}

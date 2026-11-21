@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Job Search - Fast Zero-Token Queue</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f172a; color: #f8fafc; padding: 30px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 { font-size: 24px; color: #38bdf8; margin-bottom: 8px; }
+        p.subtitle { color: #94a3b8; font-size: 14px; margin-bottom: 24px; }
+        .badge { background: #0284c7; color: white; padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+        .card { background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 18px 22px; margin-bottom: 14px; display: flex; align-items: center; justify-content: space-between; }
+        .card:hover { border-color: #38bdf8; }
+        .role { font-size: 16px; font-weight: 600; color: #f1f5f9; }
+        .meta { font-size: 13px; color: #94a3b8; margin-top: 4px; }
+        .btn { background: #2563eb; color: white; padding: 8px 16px; border-radius: 6px; text-decoration: none; font-size: 13px; font-weight: 500; display: inline-flex; align-items: center; gap: 6px; }
+        .btn:hover { background: #1d4ed8; }
+        .btn-launch-all { background: #10b981; color: white; padding: 10px 20px; font-size: 14px; font-weight: 600; cursor: pointer; border: none; border-radius: 6px; margin-bottom: 20px; }
+        .btn-launch-all:hover { background: #059669; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ Fast Zero-Token Application Queue</h1>
+        <p class="subtitle">Positions vetted for Himanshu Dahiya (100% Remote / Delhi NCR | React, Next.js, UI/UX, Full Stack). Opening any link activates your installed Userscript / Extension for instantaneous 0-token autofill.</p>
+        
+        <button class="btn-launch-all" onclick="openBatch()">🚀 Open Next 5 Positions in New Tabs</button>
+        
+        <div id="jobList">
+
+        <div class="card">
+            <div>
+                <span class="badge">Unstop Jobs</span>
+                <div class="role" style="margin-top:6px;">Rigbuzz — Web Developer</div>
+                <div class="meta">📍 Remote (All India) | 🎯 Fit: 92% | ⏰ Deadline: 2026-11-30</div>
+            </div>
+            <div>
+                <a href="https://unstop.com/jobs/web-developer-rigbuzz-1815787" target="_blank" class="btn">Open & Autofill ↗</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <span class="badge">Unstop Jobs</span>
+                <div class="role" style="margin-top:6px;">Wikasta Business and Technical Solutions Pvt. Ltd. — Software Development Engineer (Remote)</div>
+                <div class="meta">📍 Remote (All India) | 🎯 Fit: 92% | ⏰ Deadline: 2026-11-25</div>
+            </div>
+            <div>
+                <a href="https://unstop.com/jobs/software-development-engineer-remote-wikasta-business-and-technical-solutions-pvt-ltd-1803076" target="_blank" class="btn">Open & Autofill ↗</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <span class="badge">Unstop Jobs</span>
+                <div class="role" style="margin-top:6px;">Mind Masters AI Solutions — Software Developer</div>
+                <div class="meta">📍 Remote (All India) | 🎯 Fit: 92% | ⏰ Deadline: 2026-11-27</div>
+            </div>
+            <div>
+                <a href="https://unstop.com/jobs/software-developer-mind-masters-ai-solutions-1808445" target="_blank" class="btn">Open & Autofill ↗</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <span class="badge">Unstop Internships</span>
+                <div class="role" style="margin-top:6px;">Internship Mela — Frontend Developer Internship</div>
+                <div class="meta">📍 Remote (All India) | 🎯 Fit: 92% | ⏰ Deadline: 2026-12-04</div>
+            </div>
+            <div>
+                <a href="https://unstop.com/internships/frontend-developer-internship-internship-mela-1819994" target="_blank" class="btn">Open & Autofill ↗</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <span class="badge">Unstop Internships</span>
+                <div class="role" style="margin-top:6px;">Codeatrix — Frontend Development Internship</div>
+                <div class="meta">📍 Remote (All India) | 🎯 Fit: 92% | ⏰ Deadline: 2026-12-10</div>
+            </div>
+            <div>
+                <a href="https://unstop.com/internships/frontend-development-internship-codeatrix-1803889" target="_blank" class="btn">Open & Autofill ↗</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <span class="badge">Unstop Internships</span>
+                <div class="role" style="margin-top:6px;">Unicraft Tech — UI/UX Designer Internship</div>
+                <div class="meta">📍 Remote (All India) | 🎯 Fit: 92% | ⏰ Deadline: 2026-11-30</div>
+            </div>
+            <div>
+                <a href="https://unstop.com/internships/uiux-designer-internship-unicraft-tech-1813245" target="_blank" class="btn">Open & Autofill ↗</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <span class="badge">Unstop Internships</span>
+                <div class="role" style="margin-top:6px;">Codeatrix — UI/UX Design Internship</div>
+                <div class="meta">📍 Remote (All India) | 🎯 Fit: 92% | ⏰ Deadline: 2026-12-10</div>
+            </div>
+            <div>
+                <a href="https://unstop.com/internships/uiux-design-internship-codeatrix-1803907" target="_blank" class="btn">Open & Autofill ↗</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <span class="badge">Unstop Internships</span>
+                <div class="role" style="margin-top:6px;">IntraEats — UI/UX Designer Internship</div>
+                <div class="meta">📍 Remote (All India) | 🎯 Fit: 92% | ⏰ Deadline: 2026-12-15</div>
+            </div>
+            <div>
+                <a href="https://unstop.com/internships/uiux-designer-intern-intraeats-1792096" target="_blank" class="btn">Open & Autofill ↗</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <span class="badge">Unstop Internships</span>
+                <div class="role" style="margin-top:6px;">Seemons Technologies — Java Full Stack Development Internship</div>
+                <div class="meta">📍 Remote (All India) | 🎯 Fit: 92% | ⏰ Deadline: 2026-12-20</div>
+            </div>
+            <div>
+                <a href="https://unstop.com/internships/java-full-stack-development-internship-seemons-technologies-1820694" target="_blank" class="btn">Open & Autofill ↗</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <span class="badge">Unstop Internships</span>
+                <div class="role" style="margin-top:6px;">The AI Signal — Full Stack Developer Internship</div>
+                <div class="meta">📍 Remote (All India) | 🎯 Fit: 92% | ⏰ Deadline: 2026-11-27</div>
+            </div>
+            <div>
+                <a href="https://unstop.com/internships/full-stack-developer-internship-the-ai-signal-1782306" target="_blank" class="btn">Open & Autofill ↗</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <span class="badge">Unstop Internships</span>
+                <div class="role" style="margin-top:6px;">SDM Technology Private Limited — Full Stack Developer Internship</div>
+                <div class="meta">📍 Remote (All India) | 🎯 Fit: 92% | ⏰ Deadline: 2026-11-28</div>
+            </div>
+            <div>
+                <a href="https://unstop.com/internships/full-stack-developer-internship-sdm-technology-private-limited-1809668" target="_blank" class="btn">Open & Autofill ↗</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <span class="badge">Unstop Internships</span>
+                <div class="role" style="margin-top:6px;">Unicraft Tech — Full Stack Developer Internship </div>
+                <div class="meta">📍 Remote (All India) | 🎯 Fit: 92% | ⏰ Deadline: 2026-12-04</div>
+            </div>
+            <div>
+                <a href="https://unstop.com/internships/full-stack-developer-internship-unicraft-tech-1820827" target="_blank" class="btn">Open & Autofill ↗</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <span class="badge">Unstop Internships</span>
+                <div class="role" style="margin-top:6px;">SwiftBL — Full Stack Development Internship (MERN Stack)</div>
+                <div class="meta">📍 Remote (All India) | 🎯 Fit: 92% | ⏰ Deadline: 2026-12-31</div>
+            </div>
+            <div>
+                <a href="https://unstop.com/internships/full-stack-development-internship-mern-stack-swiftbl-1371422" target="_blank" class="btn">Open & Autofill ↗</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <span class="badge">Unstop Internships</span>
+                <div class="role" style="margin-top:6px;">Codeatrix — Full Stack Development Internship</div>
+                <div class="meta">📍 Remote (All India) | 🎯 Fit: 92% | ⏰ Deadline: 2026-12-04</div>
+            </div>
+            <div>
+                <a href="https://unstop.com/internships/full-stack-development-internship-codeatrix-1794485" target="_blank" class="btn">Open & Autofill ↗</a>
+            </div>
+        </div>
+        <div class="card">
+            <div>
+                <span class="badge">Unstop Internships</span>
+                <div class="role" style="margin-top:6px;">Bennufly Technology — Full Stack Developer Internship</div>
+                <div class="meta">📍 Remote (All India) | 🎯 Fit: 92% | ⏰ Deadline: 2026-11-28</div>
+            </div>
+            <div>
+                <a href="https://unstop.com/internships/full-stack-developer-internship-bennufly-technology-1795254" target="_blank" class="btn">Open & Autofill ↗</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script>
+        const urls = ["https://unstop.com/jobs/web-developer-rigbuzz-1815787", "https://unstop.com/jobs/software-development-engineer-remote-wikasta-business-and-technical-solutions-pvt-ltd-1803076", "https://unstop.com/jobs/software-developer-mind-masters-ai-solutions-1808445", "https://unstop.com/internships/frontend-developer-internship-internship-mela-1819994", "https://unstop.com/internships/frontend-development-internship-codeatrix-1803889", "https://unstop.com/internships/uiux-designer-internship-unicraft-tech-1813245", "https://unstop.com/internships/uiux-design-internship-codeatrix-1803907", "https://unstop.com/internships/uiux-designer-intern-intraeats-1792096", "https://unstop.com/internships/java-full-stack-development-internship-seemons-technologies-1820694", "https://unstop.com/internships/full-stack-developer-internship-the-ai-signal-1782306", "https://unstop.com/internships/full-stack-developer-internship-sdm-technology-private-limited-1809668", "https://unstop.com/internships/full-stack-developer-internship-unicraft-tech-1820827", "https://unstop.com/internships/full-stack-development-internship-mern-stack-swiftbl-1371422", "https://unstop.com/internships/full-stack-development-internship-codeatrix-1794485", "https://unstop.com/internships/full-stack-developer-internship-bennufly-technology-1795254"];
+        function openBatch() {
+            const nextFive = urls.slice(0, 5);
+            nextFive.forEach(u => window.open(u, '_blank'));
+        }
+    </script>
+</body>
+</html>
