@@ -3,7 +3,7 @@
 ## Current Focus & Status
 - **Candidate:** Himanshu Dahiya (B.Tech ECE 2024–2028 @ DCRUST Sonipat)
 - **Contact:** dahiyahimanshu80@gmail.com | +91 9671757885 | Sonipat, Haryana, India
-- **Links:** [LinkedIn](https://www.linkedin.com/in/himanshuakabored/) | [GitHub](https://github.com/Himanshu-Dahiya-24) | [Portfolio](https://himanshudahiya.vercel.app/)
+- **Links:** [LinkedIn](https://www.linkedin.com/in/himanshuakabored/) | [GitHub](https://github.com/Bored008) | [Portfolio](https://himanshudahiya.vercel.app/)
 - **Target Roles:** Frontend / Full-Stack Engineer (Next.js, React, TypeScript, Python) & UI/UX Product Designer
 - **Location Criteria:** 100% Remote or Sonipat / Delhi NCR (Strict Guard: no relocation outside NCR)
 - **Primary Platforms Active:** micro1, Unstop, AshbyHQ Direct ATS, Y Combinator, Greenhouse, Lever, LinkedIn
