@@ -1,12 +1,24 @@
 # Active Context: AI Job Search Pipeline
 
-## Current Focus & Status
+## Current Focus & Status (Updated: 2026-11-23 23:40 IST)
+- **Active Task:** Thermo-Nuclear Code Quality Review & Modernization (`/poteto-mode`, `/unslop`, Swarm) — **COMPLETED**
+- **Completed Phases (1–7):**
+  - **Phases 1–3 (Audit & Diagnostics):** Swarm initialized; parallel subsystem audits performed; findings recorded in `.audit/thermo-quality/` (`00_summary.md`, `01_tools_launcher.md`, `02_extensions.md`, `03_scrapers_pipeline.md`).
+  - **Phase 4 (Extensions Code Judo):** Deleted duplicate `extensions/job-search-autofill-zen/` (1,789 LOC removed); decomposed 1,260-line `content.js` into 6 modular files in `extensions/job-search-autofill/src/` (all < 200 LOC); replaced 440 lines of nested `if-else if` cascades with declarative table-driven matcher rules; fixed listener bug on `ai-job-m3-paste-btn`; updated manifests and popup profile.
+  - **Phase 5 (Launcher & Tools Code Judo):** Decoupled `tools/application_queue_launcher.html` (from 3,907 down to 662 LOC) using static template `tools/templates/launcher_template.html` (455 LOC) and dynamic JSON feed; shrunk `tools/build_launcher.py` from 1,001 down to 124 LOC; refactored `tools/bridge/engine.py` into table-driven dispatch.
+  - **Phase 6 (Hygiene & Organization):** Relocated 48 scratch/probe scripts from `tools/` and `job_scraper/` into `.archive/`; updated `.gitignore`.
+  - **Phase 7 (Behavioral Verification):** Verified launcher generation (122 active listings), syntax checks for all extension scripts (`node -c`), and bridge engine candidate fact synthesis.
+- **Next Recommended Actions:**
+  - Git commit & backup push of the modernized codebase.
+  - Application execution on active queue (122 vetted jobs in launcher deck).
+  - Assessment & interview prep for shortlisted roles (CloseKart UI/UX, Neoskillz, Labmentix).
 - **Candidate:** Himanshu Dahiya (B.Tech ECE 2024–2028 @ DCRUST Sonipat)
-- **Contact:** dahiyahimanshu80@gmail.com | +91 9671757885 | Sonipat, Haryana, India
+- **Contact:** dahiyahimanshu80@gmail.com | +91 7015708154 | Sonipat, Haryana, India
 - **Links:** [LinkedIn](https://www.linkedin.com/in/himanshuakabored/) | [GitHub](https://github.com/Bored008) | [Portfolio](https://himanshudahiya.vercel.app/)
 - **Target Roles:** Frontend / Full-Stack Engineer (Next.js, React, TypeScript, Python) & UI/UX Product Designer
 - **Location Criteria:** 100% Remote or Sonipat / Delhi NCR (Strict Guard: no relocation outside NCR)
-- **Primary Platforms Active:** micro1, Unstop, AshbyHQ Direct ATS, Y Combinator, Greenhouse, Lever, LinkedIn
+- **Primary Platforms Active:** micro1, Unstop, AshbyHQ Direct ATS, Y Combinator, Greenhouse, Lever, LinkedIn, Internshala, Wellfound
+- **Queue Count:** 115 active unapplied vetted positions in Launcher Deck | 31 confirmed applied
 
 ## Active Swarm & Multi-Agent Operations
 - **Swarm Title:** Automated Job Search & Application Pipeline
@@ -17,7 +29,7 @@
   - `@monitor`: Watchdog ensuring continuous workflow progress.
   - `@browser`: Autonomous headless form-filling and resume uploading on public ATS portals.
 
-## Application Pipeline Progress (Updated: 2026-11-21)
+## Application Pipeline Progress (Updated: 2026-11-22)
 - **1. Plane Software, Inc. — Software Engineer, Frontend (React):** `APPLIED` (AshbyHQ confirmation verified)
 - **2. Plane Software, Inc. — Software Engineer, Full Stack:** `APPLIED` (AshbyHQ confirmation verified)
 - **3. Soulside AI — Frontend Engineer (Remote India, Ashby ATS):** `APPLIED` (AshbyHQ confirmation verified)
@@ -40,11 +52,28 @@
 - **20. Mystical Views — Full Stack Developer Internship (Gurgaon NCR, Unstop):** `APPLIED` (Verified with visual screenshot `mystical_views_registration_success.png` and Gmail confirmation `1a1fad1527790b47`)
 - **21. Webmobril Technologies — Full Stack Developer Internship (Noida NCR, Unstop):** `APPLIED` (Verified with visual screenshot `webmobril_registration_success.png` and Gmail confirmation `1a1fad381172b5fe`)
 - **22. Frontend Arena — Frontend Developer Internship (Remote, Unstop):** `EXPIRED` (Registration ended 2026-11-21 11:00 AM IST; status FINISHED)
-- **23. Atlan — AI Native Builder/Architect (India/Remote, Ashby ATS):** `READY_TO_APPLY` (95% Fit, Active HTTP 200)
-- **24. ElevenLabs — Full-Stack Engineer (Frontend Leaning) - Studio (Remote Global, Ashby ATS):** `READY_TO_APPLY` (94% Fit, Active HTTP 200)
-- **25. Zenotalent — Full Stack Developer Internship (Noida NCR / Remote, Unstop):** `READY_TO_APPLY` (93% Fit, Deadline: 2026-11-28)
-- **26. Rewyoo.com — UI/UX Design Internship (Remote, Unstop):** `READY_TO_APPLY` (92% Fit, Deadline: 2026-11-25)
-- **27. Nexvora — Full Stack Developer Internship (Remote All India, Unstop):** `READY_TO_APPLY` (92% Fit, Deadline: 2026-12-04)
+- **23. Atlan — AI Native Builder/Architect (India/Remote, Ashby ATS):** `APPLIED` (Verified with official confirmation receipt in Gmail `1a1ff2be4c279155`)
+- **24. ElevenLabs — Full-Stack Engineer (Frontend Leaning) - Studio (Remote Global, Ashby ATS):** `APPLIED` (Verified with official confirmation receipt in Gmail `1a1ff49354d6c7c1`)
+- **25. Zenotalent — Full Stack Developer Internship (Noida NCR / Remote, Unstop):** `APPLIED` (Verified with Gmail confirmation `1a1fec690001b097`)
+- **26. Rewyoo.com — UI/UX Design Internship (Remote, Unstop):** `APPLIED` (Verified with Gmail confirmation `1a1fec74a4057bb8`)
+- **27. Nexvora — Full Stack Developer Internship (Remote All India, Unstop):** `APPLIED` (Verified with Gmail confirmation `1a1fec58deef5dc3`)
+- **28. Internship Mela — Frontend Developer Internship (Remote, Unstop):** `APPLIED` (Verified with Gmail confirmation `1a1fec8e8101594d`)
+- **29. Codeatrix — Frontend Development Internship (Remote, Unstop):** `APPLIED` (Verified with Gmail confirmation `1a1fec90e769c37f`)
+- **30. Codeatrix — Web Development Internship (Remote, Unstop):** `APPLIED` (Verified with Gmail confirmation `1a1fec9838c56e60`)
+- **31. Seemons Technologies — Web Development Internship (Remote, Unstop):** `APPLIED` (Verified with Gmail confirmation `1a1fec99c8865e3a`)
+- **32. IntelleQAcademy — Web Development Internship (Remote, Unstop):** `APPLIED` (Verified with Gmail confirmation `1a1feca1698b8b6e`)
+- **33. Seemons Technologies — Java Full Stack Development Internship (Remote, Unstop):** `APPLIED` (Verified with Gmail confirmation `1a1feca312efa9f9`)
+- **34. Bitnimbus — Software Engineer (Remote, LinkedIn):** `APPLIED` (Verified with Gmail confirmation `1a1fedd62027c6ee`)
+- **35. Labmentix — Software / Web Development Intern:** `SHORTLISTED_ASSESSMENT` (Shortlisted for LCAT Assessment on 2026-11-21 via Gmail `1a1fee70dec84f1f`; Test Link: https://test.labmentix.in/auth/signup; Deadline: 2026-11-22 21:48 IST; Google Calendar booked: `ubu3kdrbfah02jos07vnun7jes`)
+- **36. Neoskillz — Web & Software Development Intern:** `INTERVIEW_SCHEDULED` (Selected for Internship Program on 2026-11-21 via Gmail `1a1ff2d17e0075f5`; Induction Session: Sunday, Nov 22, 2026, 12:30 PM IST via Zoho Webinar; Google Calendar booked: `dqdjitarfhi2pdsltlq95e6sqc`)
+- **37. Coy — Software Engineer Intern (Gurgaon NCR Hybrid, Unstop):** `APPLIED` (Verified with Gmail confirmation `1a2029a4933ef072` on 2026-11-22)
+- **38. SDM Technology / Vortizo AI — Full Stack Developer Internship (Remote, Unstop):** `APPLIED` (Verified with Gmail confirmation `1a2029b47af71267` on 2026-11-22)
+- **39. Qurovo — Next.js Developer Internship (Remote, Unstop):** `APPLIED` (Verified with Gmail confirmation `1a2029c4cc4e5282` on 2026-11-22)
+- **40. EduGuruCool Operating Systems Private Limited — Product & Technology Internship (Unstop):** `APPLIED` (Verified with Gmail confirmation `1a202a9a279b5175` on 2026-11-22)
+- **41. Cognirex Solutions — UI/UX Design Internship (Remote, Unstop):** `APPLIED` (Verified with Gmail confirmation `1a202bfb72db7165` on 2026-11-22)
+- **42. Nexicat — Software Development Engineer Internship (Remote, Unstop):** `APPLIED` (Verified completed on Unstop candidate dashboard on 2026-11-22)
+- **43. Rigbuzz — Web Development Internship (Remote, Unstop):** `INELIGIBLE_CRITERIA` (Employer criteria explicitly blocks college students / engineering domain)
+- **44. Nexvora — Full Stack Developer Internship (Remote, Unstop):** `APPLIED` (Verified with Gmail confirmation `1a1fec58deef5dc3`)
 
 ## Autonomous 8-Hour Background Automation
 - **Automation Created:** `AI Job Search, Auto-Apply & Calendar Sync` (`ai-job-search-pipeline`)
@@ -65,6 +94,19 @@
 - **PC Migration / Reset:** Running `restore.ps1` from the zip restores all rules, skills, sidecars, extensions, and Obsidian memory in seconds so every preference is **defaultly applied** without re-explaining.
 
 ## Active Interview & Assessment Pipeline
+- **Neoskillz — Web & Software Development Intern:** `INTERVIEW_SCHEDULED`
+  - Received selection & induction invite in Gmail on 2026-11-21 (`1a1ff2d17e0075f5`).
+  - Session Format: Internship Induction & Program Orientation via Zoho Webinar.
+  - Stipend: ₹7,499 – ₹15,000 upon program completion.
+  - WhatsApp Community: [Join WhatsApp Group](https://chat.whatsapp.com/B99goz0KolfI3naV7LiGUL)
+  - Date & Time: **Today, Sunday, Nov 22, 2026, 12:30 PM – 01:30 PM IST**.
+  - Google Calendar booked: [Calendar Link](https://www.google.com/calendar/event?eid=ZHFkaml0YXJmaGkycGRzbHRscTk1ZTZzcWMgZGFoaXlhaGltYW5zaHU4MEBt) (`dqdjitarfhi2pdsltlq95e6sqc`).
+- **Labmentix — Software / Web Development Intern:** `SHORTLISTED_ASSESSMENT`
+  - Received assessment shortlist in Gmail on 2026-11-21 (`1a1fee70dec84f1f`).
+  - Format: LCAT Test (Labmentix Competency & Aptitude Test - 30 minutes).
+  - Test Link: [Labmentix LCAT Portal](https://test.labmentix.in/auth/signup)
+  - Submission Deadline: 24 hours (Sunday, Nov 22, 2026, 09:48 PM IST).
+  - Google Calendar booked: Sunday, Nov 22, 2026, 02:00 PM – 03:00 PM IST ([Calendar Link](https://www.google.com/calendar/event?eid=dWJ1M2tkcmJmYWgwMmpvczA3dm51bjdqZXMgZGFoaXlhaGltYW5zaHU4MEBt)).
 - **CloseKart Private Limited — UI/UX Designer Intern:** `SHORTLISTED_ASSESSMENT`
   - Received assessment round shortlist in Gmail on 2026-11-21 (`1a1fd0d16d75dfbc`).
   - Assessment Form: [Google Form Link](https://forms.gle/BqQXXfVmTPK6JQTi9)
@@ -79,9 +121,16 @@
 - **LiveKit — Design Engineer, Web/Brand:** Application receipt confirmed in Gmail (`1a1f8a231c054bca`). Status under review.
 - **Supabase — Software Engineer - AI Tooling:** Application receipt confirmed in Gmail (`1a1f890cf374075f`). Status under review.
 
-## Zero-Token Client-Side Automation Tooling
-- Built custom **1-Click ATS Autofill Chrome Extension** (`extensions/job-search-autofill`) and standalone **Userscript** (`extensions/autofill.user.js`).
-- Eliminates 25k token burn per job, dropping form-filling latency from 2 minutes to < 0.1 seconds with automatic React synthetic event dispatching and custom essay drawers.
+## Zero-Token Client-Side Automation & UI Suite (v2.3 Modernized)
+- **Job Command Deck Dashboard (`tools/application_queue_launcher.html`)**: Decomposed from 3,907 lines to 662 lines. Decoupled static HTML shell (`tools/templates/launcher_template.html`) from data records. Renders dynamically from compact JSON feed with client-side state caching, search, filtering, and batch launching.
+- **Queue Builder (`tools/build_launcher.py`)**: Decomposed from 1,001 lines down to 124 lines. Consolidates tracker and vetted sources, calculates metrics, and generates launcher via template interpolation.
+- **1-Click ATS AutoFill Pro Extension v2.3 (`extensions/job-search-autofill`)**:
+  - Decomposed 1,260-line monolithic `content.js` into modular files under `src/` (`profile.js`, `dom-engine.js`, `matcher-rules.js`, `bridge-client.js`, `hud-view.js`, `main.js`), all < 200 LOC each.
+  - Replaced 440 lines of chained `if-else if` heuristic conditionals with declarative table-driven rules.
+  - Deleted duplicate `extensions/job-search-autofill-zen/` clone (1,789 lines deleted).
+- **Bridge Engine (`tools/bridge/engine.py`)**: Refactored to table-driven intent matching with zero duplicate blocks and no ad-hoc single-listing hacks.
+- **Directory Hygiene**: Relocated 48 transient scratch probes from `tools/` and `job_scraper/` into `.archive/`.
+
 
 ## Sourced & Vetted Genuine Opportunities (Deep Search: 2026-11-21)
 - **Total Newly Vetted & Stored:** 39 active, genuine positions in `job_scraper/vetted_genuine_jobs.json`.

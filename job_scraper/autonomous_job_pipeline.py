@@ -27,8 +27,8 @@ CANDIDATE = {
     "last_name": "Dahiya",
     "full_name": "Himanshu Dahiya",
     "email": "dahiyahimanshu80@gmail.com",
-    "phone": "+91 9671757885",
-    "raw_phone": "9671757885",
+    "phone": "+91 7015708154",
+    "raw_phone": "7015708154",
     "location": "Sonipat, Haryana, India",
     "city": "Sonipat",
     "state": "Haryana",
@@ -420,6 +420,27 @@ def main():
     out_file = Path("job_scraper/new_active_discovered.json")
     out_file.write_text(json.dumps(new_active_positions, indent=2, ensure_ascii=False), encoding='utf-8')
     log(f"Saved {len(new_active_positions)} new positions to {out_file}")
+
+    # Auto-ensure bridge server is alive and rebuild launcher HTML
+    try:
+        from tools.bridge.server import PORT, HOST
+        import urllib.request
+        try:
+            with urllib.request.urlopen(f"http://{HOST}:{PORT}/api/status", timeout=2) as r:
+                pass
+        except Exception:
+            import subprocess
+            subprocess.Popen(["python", "tools/bridge/server.py"], creationflags=subprocess.CREATE_NO_WINDOW if sys.platform == 'win32' else 0)
+            log("Bridge server was offline; started detached daemon on port 8765.")
+    except Exception as e:
+        log(f"Bridge server check note: {e}")
+
+    try:
+        from tools.build_launcher import build_launcher
+        build_launcher()
+        log("Interactive Job Command Deck successfully rebuilt (tools/application_queue_launcher.html).")
+    except Exception as e:
+        log(f"Launcher build note: {e}")
 
 if __name__ == '__main__':
     main()

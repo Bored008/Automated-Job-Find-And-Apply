@@ -1,5 +1,15 @@
 [
   {
+    "company": "Qurovo",
+    "title": "Next.js Developer Internship",
+    "location": "Remote (All India)",
+    "url": "https://unstop.com/internships/nextjs-developer-internship-qurovo-1822709",
+    "source": "Unstop (Internships)",
+    "department": "Engineering / Design",
+    "deadline": "2026-12-05T00:00:00+05:30",
+    "fit_rating": 94
+  },
+  {
     "company": "Elevenlabs",
     "title": "Full-Stack Engineer (Backend Leaning) - Platform Engineering",
     "location": "Remote",
@@ -117,16 +127,6 @@
     "source": "YC Hacker News",
     "department": "Engineering",
     "deadline": null,
-    "fit_rating": 90
-  },
-  {
-    "company": "Nexvora",
-    "title": "Full Stack Developer Internship",
-    "location": "Remote (All India)",
-    "url": "https://unstop.com/internships/full-stack-developer-nexvora-1820983",
-    "source": "Unstop (Internships)",
-    "department": "Engineering / Design",
-    "deadline": "2026-12-04T00:00:00+05:30",
     "fit_rating": 90
   }
 ]

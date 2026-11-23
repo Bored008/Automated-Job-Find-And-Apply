@@ -124,3 +124,7 @@ company_research/*.json
 
 # Brainstorm mockups (superpowers visual companion) - never ship
 .superpowers/
+
+# Local archives and scratch directories
+.archive/
+

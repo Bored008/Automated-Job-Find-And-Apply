@@ -12,13 +12,20 @@
     "*://*.greenhouse.io/*",
     "*://*.lever.co/*",
     "*://*.workatastartup.com/*",
+    "*://*.ycombinator.com/*",
     "*://*.micro1.ai/*",
     "*://*.unstop.com/*",
+    "*://*.linkedin.com/*",
+    "*://*.internshala.com/*",
+    "*://*.wellfound.com/*",
     "*://*/*"
   ],
   "action": {
     "default_popup": "popup.html",
     "default_title": "AI Job Autofill"
+  },
+  "background": {
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
@@ -27,10 +34,21 @@
         "*://*.greenhouse.io/*",
         "*://*.lever.co/*",
         "*://*.workatastartup.com/*",
+        "*://*.ycombinator.com/*",
         "*://*.micro1.ai/*",
-        "*://*.unstop.com/*"
+        "*://*.unstop.com/*",
+        "*://*.linkedin.com/*",
+        "*://*.internshala.com/*",
+        "*://*.wellfound.com/*"
       ],
-      "js": ["content.js"],
+      "js": [
+        "src/profile.js",
+        "src/dom-engine.js",
+        "src/matcher-rules.js",
+        "src/bridge-client.js",
+        "src/hud-view.js",
+        "src/main.js"
+      ],
       "run_at": "document_idle"
     }
   ]

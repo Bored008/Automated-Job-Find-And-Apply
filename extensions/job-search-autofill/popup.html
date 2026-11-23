@@ -2,133 +2,375 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AI Job Autofill</title>
+  <title>AI Job AutoFill Pro</title>
   <style>
-    body {
-      margin: 0;
-      padding: 16px;
-      width: 320px;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #0f172a;
-      color: #f8fafc;
+    :root {
+      --bg: #090d16;
+      --card-bg: rgba(18, 26, 43, 0.75);
+      --border: rgba(255, 255, 255, 0.08);
+      --border-focus: rgba(56, 189, 248, 0.4);
+      --primary: #38bdf8;
+      --primary-gradient: linear-gradient(135deg, #0284c7, #2563eb);
+      --emerald-gradient: linear-gradient(135deg, #10b981, #059669);
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
     }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      width: 350px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      background: var(--bg);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(99, 102, 241, 0.1) 0px, transparent 50%);
+      color: var(--text);
+      padding: 16px;
+      line-height: 1.4;
+      user-select: none;
+    }
+
+    /* Header */
     .header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      border-bottom: 1px solid #334155;
-      padding-bottom: 12px;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
     }
-    .title {
-      font-size: 15px;
-      font-weight: 700;
+
+    .brand {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 7px;
     }
-    .badge {
-      background: #10b981;
-      color: white;
-      font-size: 10px;
-      font-weight: 700;
-      padding: 2px 6px;
+
+    .brand-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      background: var(--primary-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      box-shadow: 0 2px 8px rgba(2, 132, 199, 0.35);
+    }
+
+    .brand-text {
+      font-size: 13.5px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+    }
+
+    .version-tag {
+      font-size: 9.5px;
+      color: var(--text-dim);
+      font-weight: 600;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1px 5px;
       border-radius: 4px;
     }
-    .candidate-card {
-      background: #1e293b;
-      border: 1px solid #334155;
-      border-radius: 8px;
-      padding: 10px;
-      margin-bottom: 14px;
-      font-size: 12px;
-    }
-    .candidate-name {
+
+    .bridge-badge {
+      font-size: 10px;
       font-weight: 600;
-      color: #38bdf8;
-      font-size: 13px;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.2s ease;
     }
-    .candidate-sub {
-      color: #94a3b8;
-      margin-top: 2px;
+
+    .bridge-badge .dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #94a3b8;
     }
-    .btn-primary {
-      width: 100%;
-      background: #2563eb;
+
+    .bridge-badge.online {
+      color: #34d399;
+      border-color: rgba(16, 185, 129, 0.3);
+      background: rgba(16, 185, 129, 0.1);
+    }
+
+    .bridge-badge.online .dot {
+      background: #10b981;
+      box-shadow: 0 0 8px #10b981;
+    }
+
+    /* Candidate Card */
+    .profile-card {
+      background: var(--card-bg);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 12px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .avatar {
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, #0284c7, #6366f1);
       color: white;
+      font-weight: 700;
+      font-size: 12.5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .profile-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .name-row {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .candidate-name {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    .verified-pill {
+      font-size: 9px;
+      font-weight: 700;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.15);
+      padding: 1px 5px;
+      border-radius: 4px;
+    }
+
+    .candidate-sub {
+      font-size: 10.5px;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-top: 1px;
+    }
+
+    /* Section Label */
+    .section-title {
+      font-size: 10px;
+      font-weight: 700;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Buttons */
+    .btn {
+      width: 100%;
       border: none;
-      padding: 10px;
-      border-radius: 8px;
+      border-radius: 9px;
+      font-family: inherit;
+      font-size: 12px;
       font-weight: 600;
-      font-size: 13px;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 6px;
-      transition: background 0.15s ease;
-      margin-bottom: 10px;
+      padding: 8.5px 12px;
+      transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+      margin-bottom: 6px;
     }
-    .btn-primary:hover {
-      background: #1d4ed8;
+
+    .btn:hover {
+      transform: translateY(-1px);
+      opacity: 0.96;
     }
-    .btn-secondary {
-      width: 100%;
-      background: #1e293b;
-      color: #cbd5e1;
-      border: 1px solid #334155;
-      padding: 8px;
-      border-radius: 8px;
-      font-weight: 500;
-      font-size: 12px;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+
+    .btn:active {
+      transform: translateY(0);
+    }
+
+    .btn-hero {
+      background: var(--primary-gradient);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+    }
+
+    .btn-ai {
+      background: var(--emerald-gradient);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(16, 185, 129, 0.25);
+    }
+
+    .grid-2x2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 6px;
       margin-bottom: 8px;
     }
-    .btn-secondary:hover {
-      background: #334155;
-    }
-    .footer {
-      margin-top: 12px;
-      padding-top: 10px;
-      border-top: 1px solid #334155;
-      font-size: 11px;
-      color: #64748b;
+
+    .btn-sub {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid var(--border);
+      color: #cbd5e1;
+      padding: 7px 8px;
+      border-radius: 8px;
+      font-size: 10.5px;
+      font-weight: 600;
+      cursor: pointer;
       display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      transition: all 0.15s ease;
+      font-family: inherit;
+    }
+
+    .btn-sub:hover {
+      background: rgba(51, 65, 85, 0.7);
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 6.5px 10px;
+      font-size: 11px;
+      margin-bottom: 0;
+    }
+
+    .btn-outline:hover {
+      background: rgba(30, 41, 59, 0.4);
+      color: #ffffff;
+      border-color: rgba(255, 255, 255, 0.16);
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 10px;
+      padding-top: 8px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      align-items: center;
       justify-content: space-between;
+      font-size: 10px;
+      color: var(--text-dim);
+    }
+
+    .status-text {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .queue-link {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .queue-link:hover {
+      color: var(--primary);
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+  <!-- Header -->
   <div class="header">
-    <div class="title">⚡ Job Autofill</div>
-    <div class="badge">0 Tokens</div>
+    <div class="brand">
+      <div class="brand-icon">⚡</div>
+      <div class="brand-text">AutoFill Pro</div>
+      <span class="version-tag">v2.2</span>
+    </div>
+    <div id="bridge-badge" class="bridge-badge">
+      <span class="dot"></span>
+      <span id="bridge-label">Checking...</span>
+    </div>
   </div>
 
-  <div class="candidate-card">
-    <div class="candidate-name">Himanshu Dahiya</div>
-    <div class="candidate-sub">B.Tech ECE (DCRUST Murthal, 2024–2028)</div>
-    <div class="candidate-sub">Full-Stack & Product Designer</div>
+  <!-- Candidate Snapshot -->
+  <div class="profile-card">
+    <div class="avatar">HD</div>
+    <div class="profile-info">
+      <div class="name-row">
+        <span class="candidate-name">Himanshu Dahiya</span>
+        <span class="verified-pill">Ready</span>
+      </div>
+      <div class="candidate-sub">B.Tech ECE @ DCRUST • Softech Media</div>
+    </div>
   </div>
 
-  <button id="autofill-btn" class="btn-primary">
-    ⚡ 1-Click Autofill Form
+  <!-- Primary Fill Engines -->
+  <button id="autofill-btn" class="btn btn-hero" title="Fills standard personal, education, and contact details">
+    <span>⚡ 1-Click Standard Fill</span>
   </button>
 
-  <button id="copy-portfolio-btn" class="btn-secondary">
-    🔗 Copy Portfolio Links
+  <button id="auto-m2-btn" class="btn" title="Automated End-to-End M2: Exports form, synthesizes grounded answers on server, and injects answers into DOM" style="
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+    color: white;
+    border: none;
+    box-shadow: 0 4px 14px rgba(139, 92, 246, 0.35);
+    margin-bottom: 12px;
+  ">
+    <span>⚡ Auto M2 (Export → Solve → Inject)</span>
   </button>
 
-  <button id="copy-tracex-btn" class="btn-secondary">
-    📋 Copy TraceX Initiative Essay
+  <!-- Advanced AI Integration Architectures -->
+  <div class="section-title">
+    <span>Bridge Architectures</span>
+    <span style="font-size:9px; color:var(--text-dim);">Zero Vision Tokens</span>
+  </div>
+
+  <div class="grid-2x2">
+    <button id="m2-export-btn" class="btn-sub" title="Export pending form fields to pending_form.json">
+      📤 M2 Export
+    </button>
+    <button id="m2-inject-btn" class="btn-sub" title="Inject ready answers from ready_answers.json">
+      📥 M2 Inject
+    </button>
+    <button id="m3-copy-btn" class="btn-sub" title="Copy markdown prompt of unfilled questions for chat">
+      📋 M3 Copy
+    </button>
+    <button id="m3-paste-btn" class="btn-sub" title="Paste and inject JSON answers from chat">
+      📥 M3 Paste
+    </button>
+  </div>
+
+  <!-- Profile Copy -->
+  <button id="copy-portfolio-btn" class="btn btn-sub btn-outline" style="width:100%; margin-bottom:8px;">
+    🔗 Copy Links & Profile
   </button>
 
+  <!-- Footer -->
   <div class="footer">
-    <span>Works on Ashby, Greenhouse, Lever, YC</span>
-    <span id="status-text">Ready</span>
+    <a href="#" id="open-queue-link" class="queue-link">🚀 Open Job Queue ↗</a>
+    <span id="status-text" class="status-text">Ready</span>
   </div>
 
   <script src="popup.js"></script>

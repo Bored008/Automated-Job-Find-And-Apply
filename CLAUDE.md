@@ -15,7 +15,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 ### Identity
 - **Name:** Himanshu (Last: Dahiya)
 - **Email:** dahiyahimanshu80@gmail.com
-- **Phone:** +91 9671757885
+- **Phone:** +91 7015708154
 - **Location:** Sonipat, Haryana, India (Sonipat/Delhi NCR; cannot relocate due to college; onsite acceptable in Sonipat/Delhi, 2-3 days hybrid in Noida/distant NCR, or remote)
 - **LinkedIn:** https://www.linkedin.com/in/himanshuakabored/
 - **GitHub:** https://github.com/Himanshu-Dahiya-24

@@ -25,7 +25,7 @@ PROFILE = {
     "first_name": "Himanshu",
     "last_name": "Dahiya",
     "email": "dahiyahimanshu80@gmail.com",
-    "phone": "9671757885",
+    "phone": "7015708154",
     "gender": "Male",
     "location": "Sonipat, Haryana, India",
     "city": "Sonipat",
@@ -256,7 +256,7 @@ def main():
     
     payload_json = json.dumps(payload).encode("utf-8")
     
-    req = urllib.request.Request(reg_url, data=payload_json, headers=headers, method="POST")
+    req = urllib.request.Request(reg_url, data=payload_json, headers=headers, method="PUT")
     try:
         with urllib.request.urlopen(req, context=ctx, timeout=10) as r:
             resp = json.loads(r.read().decode("utf-8"))

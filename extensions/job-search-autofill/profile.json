@@ -5,20 +5,22 @@
   "email": "dahiyahimanshu80@gmail.com",
   "phone": "+91 7015708154",
   "phonePlain": "7015708154",
-  "location": "Sonipat / Delhi NCR, India",
+  "location": "Sonipat, Haryana, India",
   "city": "Sonipat",
   "state": "Haryana",
   "country": "India",
   "postalCode": "131039",
   "linkedin": "https://www.linkedin.com/in/himanshuakabored/",
-  "github": "https://github.com/Bored008",
-  "portfolio": "https://github.com/Bored008",
+  "github": "https://github.com/Himanshu-Dahiya-24",
+  "portfolio": "https://himanshudahiya.vercel.app/",
   "twitter": "https://x.com/Bored_OO8",
-  "currentRole": "Full-Stack Developer & Product Designer",
-  "currentCompany": "DCRUST Murthal / Independent Open Source Developer",
+  "currentRole": "Software Engineer Intern",
+  "currentCompany": "Softech Media",
+  "experienceYears": "1",
+  "compensation": "Open to discussion / standard market rate (₹10–14 LPA or standard internship stipend)",
   "education": {
-    "university": "Deenbandhu Chhotu Ram University of Science and Technology (DCRUST)",
-    "degree": "Bachelor of Technology - BTech",
+    "university": "Deenbandhu Chhotu Ram University of Science and Technology (DCRUST), Murthal, Sonipat",
+    "degree": "B.Tech in Electronics and Communication Engineering",
     "major": "Electronics and Communication Engineering (ECE)",
     "startYear": "2024",
     "endYear": "2028"
@@ -35,8 +37,9 @@
     "disability": "No"
   },
   "keyProjects": {
-    "tracex": "TraceX (https://github.com/Bored008/tracex) - Distributed microservices observability & RCA engine with sub-100ms real-time graph visualization.",
-    "yanegi": "Yanegi (https://yanegi.com) - Full-stack Next.js tourism web application with interactive SVG maps, GSAP smooth scrolling, and dynamic filters.",
-    "ebat": "EBAT Brand & Design System - Comprehensive Figma UI kit with auto-layout variants, WCAG AA compliance, and component tokens mapped to Tailwind CSS."
+    "aiAgentPipeline": "AI Job Search & Auto-Apply Pipeline (https://github.com/Bored008/Automated-Job-Find-And-Apply) - Autonomous multi-agent pipeline using MCP tools, Gemini API, and deterministic AST/DOM injection to source, score, and submit ATS job applications with ground-truth verification.",
+    "tracex": "TraceX (https://github.com/Bored008/tracex) - Distributed microservices observability & RCA engine with sub-100ms real-time graph visualization, DAG memoization, and 60fps DOM virtualization.",
+    "yanegi": "Yanegi (https://yanegi.com) - Full-stack Next.js web application with interactive SVG maps, GSAP smooth scrolling, Framer Motion, and centralized design token system.",
+    "orbitShipping": "Orbit Shipping Services - Modern user-facing web portal redesign for UAE freight and logistics enterprise at Softech Media."
   }
 }
